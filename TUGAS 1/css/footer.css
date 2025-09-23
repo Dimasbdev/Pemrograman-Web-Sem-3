@@ -1,0 +1,34 @@
+footer {
+    background: var(--forest-dark);
+    padding: 3rem 2rem 1rem;
+    text-align: center;
+    border-top: 2px solid var(--orange-accent);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--orange-accent);
+}
+
+.disclaimer {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}

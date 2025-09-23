@@ -1,0 +1,10 @@
+:root {
+    --forest-dark: #1a2f1a;
+    --forest-medium: #2d4a2d;
+    --forest-light: #3d5a3d;
+    --orange-accent: #ff7b00;
+    --orange-hover: #ff9533;
+    --text-light: #e8f5e8;
+    --text-dim: #b8d4b8;
+    --shadow-dark: rgba(0, 0, 0, 0.8);
+}
