@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Instagram Profile</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Heroicons -->
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-gray': '#A8A8A8',
+                        'custom-dark': '#1a1a1a',
+                        'custom-button': '#25292E'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white min-h-screen">
+    <!-- Header Profil -->
+    <header class="bg-black border-b border-gray-700 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14 md:h-16">
+                <div class="flex items-center space-x-2">
+                    <!-- Camera Icon -->
+                    <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z">
+                        </path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    <span class="font-bold text-lg md:text-xl">Instagram</span>
+                </div>
+
+                <!-- Navigation Icons - Responsive Order -->
+                <div class="flex items-center space-x-3 md:space-x-4 order-2 md:order-1">
+                    <!-- Heart Icon -->
+                    <button class="p-1 md:p-2 hover:bg-gray-800 rounded-full transition-colors duration-200">
+                        <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Chat Icon -->
+                    <button class="p-1 md:p-2 hover:bg-gray-800 rounded-full transition-colors duration-200">
+                        <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
+
+        <!-- Header Profil Section -->
+        <section class="mb-8 md:mb-12">
+            <div class="p-4 md:p-8">
+                <!-- Profile Layout dengan Grid Nesting -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center md:items-start">
+
+                    <!-- Profile Picture - Responsive Order -->
+                    <div class="order-1 md:order-1 col-span-1 flex justify-center md:justify-start">
+                        <div class="relative">
+                            <img src="assets/img/ranpo.jpg" alt="Profile Picture"
+                                class="w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 rounded-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Profile Info - Nested Grid -->
+                    <div class="order-2 md:order-2 col-span-1 md:col-span-2">
+                        <div class="grid grid-cols-1 gap-4 md:gap-6">
+
+                            <!-- Username and Actions - Horizontal Layout -->
+                            <div class="flex flex-col md:flex-row md:items-center md:space-x-4">
+                                <div class="text-center md:text-left mb-4 md:mb-0">
+                                    <h1 class="text-xl md:text-2xl lg:text-3xl font-light text-white"
+                                        style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                                        dimmm.f</h1>
+                                </div>
+
+                                <!-- Buttons - Right Side -->
+                                <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                                    <button
+                                        class="bg-custom-button hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 text-sm">
+                                        Edit profil
+                                    </button>
+                                    <button
+                                        class="bg-custom-button hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 text-sm">
+                                        Lihat arsip
+                                    </button>
+                                    <button class="hover:bg-gray-600 p-2 rounded-lg transition-colors duration-200">
+                                        <!-- Settings Icon -->
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                                            </path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Stats Grid - Horizontal Layout -->
+                            <div class="flex justify-center md:justify-start space-x-8 text-center md:text-left">
+                                <div class="flex items-center space-x-2">
+                                    <div class="font-semibold text-white text-lg md:text-xl">12</div>
+                                    <div class="text-custom-gray text-xs md:text-sm">kiriman</div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="font-semibold text-white text-lg md:text-xl">0</div>
+                                    <div class="text-custom-gray text-xs md:text-sm">pengikut</div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="font-semibold text-white text-lg md:text-xl">0</div>
+                                    <div class="text-custom-gray text-xs md:text-sm">mengikuti</div>
+                                </div>
+                            </div>
+
+                            <!-- Bio Section - Moved here -->
+                            <div class="mt-4 text-center md:text-left">
+                                <h2 class="font-semibold text-white mb-1 text-sm md:text-base">DF</h2>
+                                <p class="text-white text-sm md:text-base">Tech Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Highlights -->
+        <section class="mb-6 md:mb-8">
+            <div class="flex space-x-4 md:space-x-6 overflow-x-auto pb-3 scrollbar-hide">
+                <div class="flex-shrink-0 text-center">
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-gray-600 p-1 mb-2 flex items-center justify-center bg-custom-dark hover:border-white transition-colors duration-300">
+                        <!-- Plus Icon -->
+                        <svg class="w-8 h-8 md:w-10 md:h-10 text-gray-400" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
+                            </path>
+                        </svg>
+                    </div>
+                    <span class="text-white text-xs md:text-sm">Baru</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feed Navigation -->
+        <nav class="mb-6 md:mb-8">
+            <div class="flex justify-center border-b border-gray-600">
+                <div class="flex space-x-8 md:space-x-16">
+                    <a href="#" class="flex items-center py-3 md:py-4 border-b-2 border-white">
+                        <!-- Grid Icon -->
+                        <svg class="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="5" height="5" />
+                            <rect x="10" y="3" width="5" height="5" />
+                            <rect x="17" y="3" width="5" height="5" />
+                            <rect x="3" y="10" width="5" height="5" />
+                            <rect x="10" y="10" width="5" height="5" />
+                            <rect x="17" y="10" width="5" height="5" />
+                            <rect x="3" y="17" width="5" height="5" />
+                            <rect x="10" y="17" width="5" height="5" />
+                            <rect x="17" y="17" width="5" height="5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="flex items-center py-3 md:py-4 hover:text-white transition-colors duration-200">
+                        <!-- Bookmark Icon -->
+                        <svg class="w-5 h-5 md:w-6 md:h-6 text-custom-gray" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="flex items-center py-3 md:py-4 hover:text-white transition-colors duration-200">
+                        <!-- User Icon -->
+                        <svg class="w-5 h-5 md:w-6 md:h-6 text-custom-gray" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Feed Grid - Responsive Layout -->
+        <section class="mb-8 md:mb-16">
+            <!-- Grid responsif: mobile 1 kolom, tablet 2 kolom, desktop 4 kolom -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3">
+
+                <!-- Photo 1 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/rinsns.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 1">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/piano.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 2">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/sakura.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 3">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/catnight.jpg"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 4">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/girlcomputer.jpg"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 5">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/catmeme.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 6">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 7 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/catspixel.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 7">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 8 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/firekeeper.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 8">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 9 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/itachi.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 9">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 10 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/moon.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 10">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 11 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/nier.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 11">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 12 -->
+                <div class="relative group overflow-hidden aspect-square">
+                    <img src="assets/img/singularity.jfif"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        alt="Post 12">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="flex items-center justify-center space-x-4">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">1</span>
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black mt-12 md:mt-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+            <!-- First row of links -->
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4 text-xs md:text-sm">
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Meta</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Tentang</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Blog</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Pekerjaan</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Bantuan</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">API</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Privasi</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Ketentuan</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Lokasi</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Instagram Lite</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Meta AI</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Artikel Meta AI</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Threads</a>
+            </div>
+
+            <!-- Second row of links -->
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6 text-xs md:text-sm">
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Pengunggahan Kontak
+                    & Nonpengguna</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Verifikasi Meta</a>
+                <a href="#" class="text-custom-gray hover:text-white transition-colors duration-200">Meta di
+                    Indonesia</a>
+            </div>
+
+            <!-- Bottom section -->
+            <div class="flex flex-col md:flex-row justify-center md:justify-between items-center text-xs md:text-sm">
+                <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                    <select
+                        class="bg-black text-custom-gray border border-gray-600 rounded px-2 py-1 text-xs md:text-sm focus:outline-none focus:border-gray-400 transition-colors duration-200">
+                        <option>Bahasa Indonesia</option>
+                        <option>English</option>
+                    </select>
+                </div>
+                <div class="text-custom-gray">
+                    <span>© 2025 Instagram from Meta</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

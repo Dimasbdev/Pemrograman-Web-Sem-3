@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Instagram Profile</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->s
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body class="bg-black text-white">
+    <!-- Navbar Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="#">
+                <i class="bi bi-instagram text-danger"></i> Instagram
+            </a>
+            <div class="d-flex">
+                <button class="btn btn-outline-light btn-sm me-2">
+                    <i class="bi bi-heart"></i>
+                </button>
+                <button class="btn btn-outline-light btn-sm">
+                    <i class="bi bi-chat"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Kontainer Utama -->
+    <div class="container my-4">
+        <!-- Profile Header Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card border-0 rounded-3 shadow-sm bg-black">
+                    <div class="card-body p-4">
+                        <!-- Profile Info Row -->
+                        <div class="row align-items-center">
+                            <!-- Profile Picture - Mobile: center, Desktop: left -->
+                            <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                                <img src="assets/img/ranpo.jpg" alt="Profile Picture"
+                                    class="rounded-circle border border-3 border-light" width="150" height="150"
+                                    style="object-fit: cover;">
+                            </div>
+
+                            <!-- Profile Details -->
+                            <div class="col-12 col-md-8">
+                                <div class="row">
+                                    <!-- Username and Buttons - Using order for responsive positioning -->
+                                    <div class="col-12 order-1 order-md-1 mb-3">
+                                        <div
+                                            class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+                                            <h2 class="mb-2 mb-md-0 me-md-4 text-white">dimmm.f</h2>
+                                            <!-- Button dengan urutan responsif -->
+                                            <div class="d-flex gap-2 order-3 order-md-2">
+                                                <button class="btn btn-custom-dark btn-sm px-4 fw-bold rounded-4 me-2">
+                                                    Edit profil
+                                                </button>
+                                                <button class="btn btn-custom-dark btn-sm px-4 fw-bold rounded-4 me-2">
+                                                    Lihat arsip
+                                                </button>
+                                                <button class="btn btn-link p-0 ms-2 text-white fs-1">
+                                                    <i class="bi bi-gear text-white"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Stats - Memakai offset untuk penyesuaian desktop -->
+                                    <div class="col-12 order-2 order-md-3 mb-3">
+                                        <div class="row text-center text-md-start">
+                                            <div
+                                                class="col-4 col-md-auto me-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                                                <span class="fw-bold text-white me-1">12</span>
+                                                <span class="text-custom-gray">kiriman</span>
+                                            </div>
+                                            <div
+                                                class="col-4 col-md-auto me-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                                                <span class="fw-bold text-white me-1">0</span>
+                                                <span class="text-custom-gray">pengikut</span>
+                                            </div>
+                                            <div
+                                                class="col-4 col-md-auto d-flex align-items-center justify-content-center justify-content-md-start">
+                                                <span class="fw-bold text-white me-1">0</span>
+                                                <span class="text-custom-gray">mengikuti</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bio Section -->
+                        <div class="row mt-3">
+                            <div class="col-12 col-md-8 offset-md-4">
+                                <div>
+                                    <h6 class="fw-bold mb-1 text-white">DF</h6>
+                                    <p class="mb-2 text-white">Tech Enthusiast</p>
+                                    <p class="mb-2 text-white"></p>
+                                    <p class="mb-0">
+                                        <a href="#" class="text-decoration-none text-info">
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stories Highlights -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex gap-3 overflow-auto pb-2">
+                    <div class="text-center flex-shrink-0">
+                        <div
+                            class="rounded-circle border border-2 border-light p-1 mb-2 d-flex align-items-center justify-content-center bg-custom-dark story-highlight">
+                            <i class="bi bi-plus text-light fs-2"></i>
+                        </div>
+                        <small class="text-light">Baru</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feed Navigation -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <ul class="nav justify-content-center border-bottom border-secondary">
+                    <li class="nav-item mx-5">
+                        <a class="nav-link active p-0 d-flex justify-content-center align-items-center border-0"
+                            href="#">
+                            <i class="bi bi-grid-3x3 fs-1 text-white"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link p-0 d-flex justify-content-center align-items-center border-0" href="#">
+                            <i class="bi bi-bookmark fs-1 text-custom-gray"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link p-0 d-flex justify-content-center align-items-center border-0" href="#">
+                            <i class="bi bi-person-square fs-1 text-custom-gray"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Photo Feed Grid -->
+        <div class="row g-1 g-md-2">
+            <!-- Photo 1 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/rinsns.jfif" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 1">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/piano.jfif" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 2">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/sakura.jfif" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 3">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/catnight.jpg" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 4">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/girlcomputer.jpg"
+                        class="card-img-top w-100 img-custom-feed img-hover-transform" alt="Post 5">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/catmeme.jfif" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 6">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 7 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/catspixel.jfif" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 7">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 8 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/firekeeper.jfif" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 8">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 9 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/itachi.jfif" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 9">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 10 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/moon.jfif" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 10">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 11 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/nier.jfif" class="card-img-top w-100 img-custom-feed img-hover-transform"
+                        alt="Post 11">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo 12 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 position-relative overflow-hidden">
+                    <img src="assets/img/singularity.jfif"
+                        class="card-img-top w-100 img-custom-feed img-hover-transform" alt="Post 12">
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white photo-overlay bg-overlay-dark">
+                        <div class="text-center">
+                            <i class="bi bi-heart-fill me-2"></i>1
+                            <i class="bi bi-chat-fill ms-3 me-2"></i>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+                        <a href="#" class="text-custom-gray text-decoration-none small">Meta</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Tentang</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Blog</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Pekerjaan</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Bantuan</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">API</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Privasi</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Ketentuan</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Lokasi</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Instagram Lite</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Meta AI</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Artikel Meta AI</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Threads</a>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+                        <a href="#" class="text-custom-gray text-decoration-none small">Pengunggahan Kontak &
+                            Nonpengguna</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Verifikasi Meta</a>
+                        <a href="#" class="text-custom-gray text-decoration-none small">Meta di Indonesia</a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <select class="form-select form-select-sm bg-black text-custom-gray border-secondary"
+                            style="width: auto;">
+                            <option>Bahasa Indonesia</option>
+                        </select>
+                        <span class="text-custom-gray small">© 2025 Instagram from Meta</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
