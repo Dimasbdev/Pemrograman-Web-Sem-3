@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Struktur perulangan for</title>
+    <script type="text/javascript">
+        function validasi(form) {
+            if (form.user.value == "") {
+                alert("Anda belum mengisikan username?");
+                form.nama.focus();
+                return (false);
+            }
+            if (form.pass.value == "") {
+                alert("Anda belum mengisikan password?");
+                form.password.focus();
+                return (false);
+            }
+            return (true);
+        }
+
+    </script>
+</head>
+
+<body>
+    <form method="POST" action="#" onsubmit="return validasi(this);">
+        <table>
+            <tr>
+                <th colspan="3">Login Area</th>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" name="user" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="pass" /></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Kirim" />
+                </td>
+                <td></td>
+                <td><input type="reset" value="Batal"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
