@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>UTS Praktikum</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="form-card">
+                <h1>Input Data</h1>
+                <form class="fs-form" id="studentForm">
+                    <div class="fs-field">
+                        <label class="fs-label" for="full-name">Nama Lengkap</label>
+                        <input class="fs-input" id="full-name" name="full-name" placeholder="Masukkan nama" required />
+                    </div>
+                    <div class="fs-field">
+                        <label class="fs-label" for="nim">NIM</label>
+                        <input class="fs-input" id="nim" name="nim" placeholder="Masukkan NIM" required />
+                    </div>
+                    <div class="fs-field">
+                        <label class="fs-label" for="semester">Semester</label>
+                        <input type="number" class="fs-input" id="semester" name="semester" placeholder="1-8" min="1"
+                            max="8" required />
+                    </div>
+                    <div class="fs-field">
+                        <label class="fs-label" for="program-studi">Program Studi</label>
+                        <select class="fs-select" id="program-studi" name="program-studi" required>
+                            <option value="">--Pilih--</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Ilmu Komputer">Ilmu Komputer</option>
+                            <option value="Teknologi Informasi">Teknologi Informasi</option>
+                            <option value="Teknik Komputer">Teknik Komputer</option>
+                        </select>
+                    </div>
+                    <div class="fs-field">
+                        <label class="fs-label" for="email">Email</label>
+                        <input type="email" class="fs-input" id="email" name="email" placeholder="Masukkan email"
+                            required />
+                    </div>
+                    <div class="fs-button-group">
+                        <button class="fs-button fs-button-custom" type="submit">Kirim Data</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h1>Informasi Pengiriman</h1>
+            <div class="info-card">
+                <h2>Apa yang terjadi saat Anda klik "Kirim Data"?</h2>
+                <ul>
+                    <li>Data ditampilkan di console</li>
+                    <li>Data disimpan di array</li>
+                    <li>jumlah data akan di update</li>
+                    <li>Form akan kosong kembali</li>
+                </ul>
+            </div>
+            <h1>Table Mahasiswa</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">NAMA</th>
+                        <th scope="col">INFO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Budi santoso</td>
+                        <td>Prodi: 5 Semester: 3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Siti Nurhaliza</td>
+                        <td>Prodi: 1 Semester: 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('studentForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = {
+                namaLengkap: document.getElementById('full-name').value,
+                nim: document.getElementById('nim').value,
+                semester: document.getElementById('semester').value,
+                programStudi: document.getElementById('program-studi').value,
+                email: document.getElementById('email').value
+            };
+
+            console.log('Data Mahasiswa:', formData);
+        });
+    </script>
+</body>
+
+</html>
