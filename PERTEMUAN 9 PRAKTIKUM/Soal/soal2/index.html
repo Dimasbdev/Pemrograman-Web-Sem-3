@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Pecahan Uang</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <h1>Hitung Pecahan Uang</h1>
+
+    <form method="post" action="src/php/soal2.php">
+        <div class="form-row">
+            <label for="jumlahUang">Jumlah Uang (Rp)</label>
+            <input id="jumlahUang" name="jumlahUang" type="number" step="1" min="0" value="1575250" required>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <div class="note">
+        <strong>Pecahan yang tersedia:</strong> Rp 100.000, Rp 50.000, Rp 20.000, Rp 5.000, Rp 100, Rp 50
+        <br>Contoh: Jumlah uang Rp 1.575.250
+    </div>
+</body>
+
+</html>

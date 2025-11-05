@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    padding: 40px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+.form-row input[type="text"],
+.form-row input[type="number"],
+.form-row textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: #2c3e50;
+}
+
+.form-row textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.date-group {
+    display: flex;
+    gap: 10px;
+}
+
+.date-group select {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.date-group select:focus {
+    outline: none;
+    border-color: #2c3e50;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.radio-label input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.form-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+button[type="submit"], button[type="button"] {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.4);
+    background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+}
+
+button[type="reset"] {
+    background: #95a5a6;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background: #7f8c8d;
+}
+
+.result {
+    background: #ecf0f1;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #2c3e50;
+}
+
+.greeting {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table tr {
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.data-table tr:last-child {
+    border-bottom: none;
+}
+
+.data-table td {
+    padding: 12px 0;
+    vertical-align: top;
+}
+
+.data-table .label {
+    font-weight: 600;
+    color: #2c3e50;
+    width: 150px;
+}
+
+.data-table .separator {
+    width: 20px;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+a {
+    text-decoration: none;
+}
