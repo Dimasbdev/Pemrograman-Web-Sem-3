@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencari Solusi Persamaan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 min-h-screen py-12 px-4">
+    <div class="max-w-2xl mx-auto">
+        <div class="bg-gray-800 rounded-lg shadow-xl p-8">
+            <h2 class="text-3xl font-bold text-center text-white mb-6">Pencari Solusi Persamaan</h2>
+
+            <div class="bg-blue-900 border-l-4 border-blue-500 p-4 mb-6">
+                <p class="font-semibold text-blue-200 mb-2">Persamaan:</p>
+                <p class="text-xl text-white font-mono text-center py-2">x + y + z = 25</p>
+                <p class="text-sm text-gray-300 mt-2">dimana x, y, dan z adalah bilangan asli (≥ 1)</p>
+            </div>
+
+            <form method="POST" action="soal2.php" class="space-y-6">
+                <div class="bg-gray-700 rounded-lg p-6">
+                    <p class="text-gray-200 text-center mb-4">
+                        Program akan mencari semua pasangan nilai x, y, dan z yang memenuhi persamaan di atas.
+                    </p>
+                    <p class="text-sm text-gray-400 text-center">
+                        Klik tombol di bawah untuk melihat hasil
+                    </p>
+                </div>
+
+                <button type="submit" name="cari"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition duration-200 shadow-md hover:shadow-lg">
+                    Cari Semua Solusi
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
